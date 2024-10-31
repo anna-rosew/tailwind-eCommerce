@@ -23,19 +23,19 @@ export function NavBar() {
           ))}
         </div>
       </div>
-      <div className="flex center-items gap-x-5">
-        <div>
-          <p className=" hidden font-medium lg:block text-[#36485C] pr-[56px]">
-            Open an account
-          </p>
+      <div className="flex gap-x-5">
+        <p className="hidden lg:block font-medium text-[#36485C] pr-[56px]">
+          Open an Account
+        </p>
+
+        <div className="flex items-center gap-x-2">
           <Image src={User} alt="User Profile" />
-          <span className="hidden font-medium text-[36485C] lg:block">
+          <span className="hidden font-medium text-[#36485C] lg:block">
             Sign in
           </span>
         </div>
-        <div>
-          <Image src={Menu} alt="Menu Button" className="lg:hidden" />
-        </div>
+
+        <Image src={Menu} alt="Menu Button" className="lg:hidden" />
       </div>
     </nav>
   );
